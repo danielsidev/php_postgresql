@@ -1,19 +1,22 @@
 
+#PHP with PostgreSQL
+A small web application to show how make a connection with postgreSQL and how to create a CRUD using PDO
 
-Uma pequena aplicação web em PHP 5.* OO para demonstrar como é
+#Description
+A small web application in PHP 5. * OO to demonstrate how
 
-realizada a conexão com o postgresql(nesse caso o postgreSQL 9.3) e 
+made the connection to the postgresql (in this case the postgreSQL 9.3) and
 
-um exemplo de CRUD genérico com PDO.
+an example of generic CRUD with PDO.
 
-Lembrete:
+Reminder:
 
-Para ver esse projeto funcionando, lembre-se de configurar o arquivo DAO.php
+To see this project going, remember to set the file DAO.php
 
-como seu usuário, senha, host e de criar um banco chamado agenda.
+as your user name, password, host and create a database called agenda.
 
-Também não se esqueça de criar a tabela agenda_contato. 
+Also be sure to create the agenda_contato table.
 
-Para isso, basta rodar o arquivo: criarAgendaContato.php
+Simply run the file: criarAgendaContato.php
 
 
