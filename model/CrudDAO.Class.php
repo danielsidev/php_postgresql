@@ -43,7 +43,8 @@ class CrudDAO extends DAO {
         
         try {
             $this->db->beginTransaction();
-            $sql = $this->db->exec("insert into {$tabela} ({$campos}) values({$valores})");
+            $sql = $this->db->exec("insert into {$tabela} ({$campos})"
+            . " values({$valores})");
             if (!$sql) {
                 $this->db->rollBack();
                 throw new Exception("Não houve Inserção! <br> Ocorreu um erro! ");
@@ -58,8 +59,8 @@ class CrudDAO extends DAO {
             $this->db = null;
         }
     }
-    
-        public function insertfree($tabela, Array $dados) {
+/********************Insere os dados em Loop**********************************/    
+        public function insertFree($tabela, Array $dados) {
   
 
         foreach ($dados as $inds => $vals) {
@@ -197,9 +198,7 @@ class CrudDAO extends DAO {
           
                 throw new Exception("A linha não foi excluída! <br> Ocorreu um erro!");
             } 
-        } catch (Exception $e) {
-           // echo $e->getMessage() . "<br>Error na linha:  "; //Pega a mensagem de erro definida
-           // echo "<b>" . $e->getTraceAsString() . "</b>"; //Mostra a linha do  erro!
+        } catch (Exception $e) {           
              $this->db = null;
         }
     }   
