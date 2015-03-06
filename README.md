@@ -10,7 +10,7 @@ Lembrete:
 
 Para ver esse projeto funcionando, lembre-se de configurar o arquivo DAO.php
 
-como seu usuário, senha e host.
+como seu usuário, senha, host e de criar um banco chamado agenda.
 
 Também não se esqueça de criar a tabela agenda_contato. 
 

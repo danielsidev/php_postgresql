@@ -5,8 +5,8 @@ class DAO {
      protected $db ;
      private   $host="localhost";//seu host
      private   $dbname="agenda";//o nome do seu banco
-     private   $user="daniel";//seu usuário
-     private   $senha="123";//sua senha
+     private   $user="";//seu usuário
+     private   $senha="";//sua senha
      
     public function __construct() {
 
