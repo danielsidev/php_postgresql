@@ -9,7 +9,7 @@ made the connection to the postgresql (in this case the postgreSQL 9.3) and
 
 an example of generic CRUD with PDO.
 
-Reminder:
+#Reminder:
 
 To see this project going, remember to set the file DAO.php
 
